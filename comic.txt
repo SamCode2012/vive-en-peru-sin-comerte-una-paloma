@@ -1,1 +1,54 @@
 print("Miau Cat");
+# ===========================
+# MIAU CAT - CÓMIC #1
+# ===========================
+
+comic = [
+    {
+        "viñeta": 1,
+        "personaje": "Miau Cat",
+        "dialogo": "¡Qué bonito día para explorar!",
+        "accion": "Miau Cat sale de su casa."
+    },
+
+    {
+        "viñeta": 2,
+        "sonido": "MIAAAAUUU...",
+        "personaje": "Miau Cat",
+        "dialogo": "¿Qué fue ese ruido?"
+    },
+
+    {
+        "viñeta": 3,
+        "personaje": "Miau Cat",
+        "accion": "Corre hacia el bosque."
+    },
+
+    {
+        "viñeta": 4,
+        "personaje": "Sombra Gato",
+        "dialogo": "Te estaba esperando..."
+    },
+
+    {
+        "viñeta": 5,
+        "personaje": "Miau Cat",
+        "dialogo": "¡No dejaré que destruyas el bosque!"
+    }
+]
+
+for escena in comic:
+    print("=" * 30)
+    print("Viñeta:", escena["viñeta"])
+
+    if "personaje" in escena:
+        print("Personaje:", escena["personaje"])
+
+    if "dialogo" in escena:
+        print("Diálogo:", escena["dialogo"])
+
+    if "accion" in escena:
+        print("Acción:", escena["accion"])
+
+    if "sonido" in escena:
+        print("SFX:", escena["sonido"])
